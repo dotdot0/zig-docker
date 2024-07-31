@@ -1,4 +1,4 @@
-FROM dotdot0/zig
+FROM dotdot0/zig:alpine
 
 WORKDIR /app
 

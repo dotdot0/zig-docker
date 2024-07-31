@@ -1,9 +1,9 @@
-FROM debian
+FROM alpine
 
 WORKDIR /app
 
-RUN apt-get update && \
-    apt-get install -y wget tar xz-utils
+RUN apk update update && \
+    apk add wget tar xz
 
 RUN wget https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz && \
     ls -al /app && \
